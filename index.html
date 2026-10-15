@@ -3,6 +3,8 @@
 <header class="site-header"><div class="brand"><img class="app-icon" src="icon-header.svg" width="46" height="46" alt="Farrel Formula Guide icon">
 <div><div class="company">Ram-Gear Manufacturing Inc.</div><h1>Farrel Formula Guide <span class="sub">Explanation of the Farrel formula, manual #610A pp. 45 &amp; 46</span></h1></div></div>
 <nav class="header-actions"><button type="button" class="btn" onclick="window.print()">Print</button><a class="btn btn-ghost" href="help.html">Help</a></nav></header>
+<div class="print-only print-head"><div class="ptitle">Farrel Formula Guide – Explanation of the Farrel Formula (Farrel manual #610A pp. 45 &amp; 46)</div><div class="pmeta">Ram-Gear Manufacturing Inc. · Printed <span class="pdate"></span></div></div>
+
 <main class="help-main">
 <section class="card"><h2>The formula</h2>
 <p><code>CTTT @ PDE = PDE · ((π/2 + 2·TANPAT·DPT·X) / N + INVPAT − INVPATE)</code></p>
@@ -30,4 +32,6 @@
 <div class="practice"><h3>Program “B&amp;S TO SPAN &amp; CR”</h3><p>Will convert chordal dimensions for an individual gear (or pinion) to span dimensions &amp; comparator readings.</p></div>
 <div class="practice"><h3>Program “SPAN TO CR &amp; BS”</h3><p>Will convert span dimensions for an individual gear (or pinion) to comparator readings &amp; chordal dimensions.</p></div>
 <div class="practice"><h3>Programs “MOB TO CR BS SPAN O” &amp; “MOB TO CR SPAN E”</h3><p>Will convert measurement over balls (MOB) for an individual gear (or pinion) to comparator readings, chordal dimensions &amp; span dimensions.</p></div></section>
-</main><footer class="site-footer">Original content by Roger Blake, R.C. Blake Company (“Explanation of Farrel Formula”, folder MANUAL HB, 12 June 10, rev. 29 Apr 13). Ref: Farrel manual #610A, pages 45 &amp; 46. Browser version by Ram-Gear Manufacturing Inc.</footer></body></html>
+<div class="print-only print-credit">Original content by Roger Blake, R.C. Blake Company (“Explanation of Farrel Formula”). Browser version by Ram-Gear Manufacturing Inc.</div>
+</main><footer class="site-footer">Original content by Roger Blake, R.C. Blake Company (“Explanation of Farrel Formula”, folder MANUAL HB, 12 June 10, rev. 29 Apr 13). Ref: Farrel manual #610A, pages 45 &amp; 46. Browser version by Ram-Gear Manufacturing Inc.</footer><script>(function(){const s=()=>{const d=new Date().toLocaleDateString(undefined,{year:"numeric",month:"long",day:"numeric"});document.querySelectorAll(".pdate").forEach(e=>e.textContent=d)};s();let o=[];addEventListener("beforeprint",()=>{s();o=[...document.querySelectorAll(".practice details:not([open])")];o.forEach(d=>d.open=true)});addEventListener("afterprint",()=>{o.forEach(d=>d.open=false);o=[]})})();</script>
+</body></html>
