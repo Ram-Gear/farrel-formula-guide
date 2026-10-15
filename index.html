@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Farrel Formula Guide | Ram-Gear Manufacturing</title><link rel="icon" type="image/svg+xml" href="icon.svg"><link rel="icon" type="image/png" href="favicon.png"><link rel="icon" href="favicon.ico" sizes="any"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="stylesheet" href="css/style.css"></head><body>
+<header class="site-header"><div class="brand"><img class="app-icon" src="icon.svg" width="46" height="46" alt="Farrel Formula Guide icon">
+<div><div class="company">Ram-Gear Manufacturing Inc.</div><h1>Farrel Formula Guide <span class="sub">Explanation of the Farrel formula, manual #610A pp. 45 &amp; 46</span></h1></div></div>
+<nav class="header-actions"><button type="button" class="btn" onclick="window.print()">Print</button><a class="btn btn-ghost" href="help.html">Help</a></nav></header>
+<main class="help-main">
+<section class="card"><h2>The formula</h2>
+<p><code>CTTT @ PDE = PDE · ((π/2 + 2·TANPAT·DPT·X) / N + INVPAT − INVPATE)</code></p>
+<p>This formula will calculate the CTTT @ PDE but only if the PDE, OD, DPT, PAT, number of teeth &amp; comparator reading are known.</p>
+<p><a href="https://grok.com/?q=Explain%20the%20Farrel%20formula%20CTTT%20%40%20PDE%20%3D%20PDE%2A%28%28Pi/2%20%2B%202%2ATANPAT%2ADPT%2AX%29/N%20%2B%20INVPAT%20-%20INVPATE%29%20for%20gear%20tooth%20thickness." target="_blank" rel="noopener">Ask Grok: explain this formula</a></p></section>
+<section class="card"><h2>Applying it to a gearset</h2>
+<p>This may be applied to a gearset if all gearset specs are known:</p>
+<p><code>CPT @ PDE = CTTTP @ PDPE + CTTTG @ PDGE</code> &nbsp;(at the condition of BL = 0.000)</p>
+<p><code>CPT @ PDE = CTTTP @ PDPE + CTTTG @ PDGE + BLCT</code></p>
+<p><code>CPN @ PDE = CTTNP @ PDPE + CTTNG @ PDGE + BLCN</code></p>
+<p class="flag"><b>Note:</b> BLCN is assumed to be “feeler gage backlash”.</p>
+<p>The formula may be re-configured for a gearset to calculate CRP, CRG, chordal &amp; span dimensions with set backlash input.</p>
+<div class="practice"><h3>Program “BL TO CR'S B&amp;S SPAN”</h3><p>Makes these conversions.</p><p><small>This program will handle “odd OD’s” &amp; “extended centers”.</small></p></div>
+<p><a href="https://grok.com/?q=How%20does%20circular%20pitch%20at%20the%20operating%20pitch%20diameter%20equal%20pinion%20tooth%20thickness%20plus%20gear%20tooth%20thickness%20plus%20backlash%3F" target="_blank" rel="noopener">Ask Grok: pitch = thicknesses + backlash</a></p></section>
+<section class="card"><h2>Applying it to an individual gear (or pinion)</h2>
+<p>The formula may also be applied to an individual gear (or pinion). In this case, the PDE = PD, INVPAT = INVPATE, C = CE &amp; RC = 1.000.</p>
+<p>This is very helpful when “odd OD’s” &amp;/or “odd CR’s” are encountered.</p>
+<p class="flag"><b>Note:</b> Not all gearsets have the “set backlash” divided equally between the gear &amp; pinion.</p>
+<div class="practice"><h3>Program “CRG OR CRP TO B&amp;S SPAN”</h3><p>Converts these comparator readings to circular tooth thickness, span dimensions &amp; chordal dimensions.</p></div></section>
+<section class="card"><h2>Oilfield herringbone drawings</h2>
+<p>Drawings for oilfield herringbone gears &amp; pinions usually list only CRP, ODP, CRG, ODG, PAT, HA &amp; CE. They are usually operated on “standard centers”.</p>
+<div class="practice"><h3>Program “CR'S TO TO BL SPAN B&amp;S”</h3><p>Converts these comparator readings to circular tooth thicknesses, span dimensions, chordal dimensions &amp; set backlash.</p><p><small>This program will handle “odd OD’s” &amp; “extended centers”.</small></p></div></section>
+<section class="card"><h2>Industrial herringbone drawings</h2>
+<p>Sometimes a drawing for an “industrial” herringbone gear (or pinion) will list “span dimensions”, “chordal dimensions” &amp;/or “MOB”.</p>
+<div class="practice"><h3>Program “B&amp;S TO SPAN &amp; CR”</h3><p>Will convert chordal dimensions for an individual gear (or pinion) to span dimensions &amp; comparator readings.</p></div>
+<div class="practice"><h3>Program “SPAN TO CR &amp; BS”</h3><p>Will convert span dimensions for an individual gear (or pinion) to comparator readings &amp; chordal dimensions.</p></div>
+<div class="practice"><h3>Programs “MOB TO CR BS SPAN O” &amp; “MOB TO CR SPAN E”</h3><p>Will convert measurement over balls (MOB) for an individual gear (or pinion) to comparator readings, chordal dimensions &amp; span dimensions.</p></div></section>
+</main><footer class="site-footer">Original content by Roger Blake, R.C. Blake Company (“Explanation of Farrel Formula”, folder MANUAL HB, 12 June 10, rev. 29 Apr 13). Ref: Farrel manual #610A, pages 45 &amp; 46. Browser version by Ram-Gear Manufacturing Inc.</footer></body></html>
